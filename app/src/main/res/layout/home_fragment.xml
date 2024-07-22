@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_collapseMode="pin" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_home_hint"
+                android:layout_width="@dimen/dp_136"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_centerInParent="true"
+                android:paddingVertical="@dimen/dp_5"
+                app:srcCompat="@drawable/logoraw40" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_home_add"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_20"
+                app:srcCompat="@drawable/dev_add_ic"
+                app:tint="@color/white" />
+
+            <!--<androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_hint"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@drawable/home_search_bar_transparent_bg"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_5"
+                android:text="完善细节，追求完美"
+                android:textColor="@color/white60"
+                android:textSize="@dimen/sp_13" />-->
+
+            <!--<androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_home_search"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:srcCompat="@drawable/ic_scan"
+                app:tint="@color/white" />-->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:itemCount="2"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/tab_item_design"
+            tools:spanCount="2" />
+
+
+
+    <com.hjq.widget.layout.NestedViewPager
+        android:id="@+id/vp_home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

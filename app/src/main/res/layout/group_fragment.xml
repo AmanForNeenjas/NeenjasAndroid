@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.fragment.FindFragment">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@null"
+        app:barStyle="transparent"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/home_nav_found" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/rl_share_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lav_splash_lottie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_300"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/sharenodata" />
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_add_new_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_50"
+
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:text="@string/create_group"
+                android:textAlignment="center"
+                android:textColor="@color/table_cell_font_dark"
+                android:textSize="14sp"
+                app:shape="rectangle"
+                app:shape_radius="@dimen/dp_10"
+                app:shape_shadowColor="@color/black10"
+                app:shape_shadowSize="10dp"
+                app:shape_solidColor="@color/table_cell_color" />
+
+
+            <com.hjq.widget.layout.RoundTopSettingBar
+                android:id="@+id/sb_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/myfamliy"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+
+                tools:bar_rightText="xuyihan2004" />
+            <com.hjq.widget.layout.RoundBottomSettingBar
+                android:id="@+id/sb_add_group_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_leftText="@string/add_group"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                app:bar_lineVisible = "false"
+                 />
+
+
+
+            <com.hjq.widget.view.DrawableTextView
+                android:id="@+id/tv_user_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:drawableStart="@drawable/group_user_ic"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:textColor="@color/table_cell_font_dark"
+                android:text="@string/group_user"
+                app:drawableHeight="@dimen/dp_20"
+                app:drawableWidth="@dimen/dp_20" />
+            <View
+                android:id="@+id/iv_goup_user_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/dev_top_corners"
+                />
+            <com.hjq.widget.view.NestedListView
+                android:id="@+id/lv_group_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:descendantFocusability="blocksDescendants"
+                tools:listitem="@layout/groupuser_lst_row" />
+            <View
+                android:id="@+id/iv_goup_user_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/dev_bottom_corners"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

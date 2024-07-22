@@ -1,0 +1,482 @@
+<resources>
+    <string name="app_name">NIKOTA</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">加载中&#8230;</string>
+
+    <string name="common_unknown_error">未知错误</string>
+
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+
+    <string name="common_year">年</string>
+    <string name="common_month">月</string>
+    <string name="common_day">日</string>
+
+    <string name="common_hour">时</string>
+    <string name="common_minute">分</string>
+    <string name="common_second">秒</string>
+
+    <string name="common_crash_hint">应用出了点小意外，正在重新启动</string>
+
+    <string name="common_network_error">当前网络不可用，请检查网络设置</string>
+
+    <string name="common_video_error_not_support">该视频不适合在此设备上播放</string>
+    <string name="common_video_error_unknown">无法播放此视频</string>
+    <string name="common_video_error_supplement">错误类型：%d，错误代码：%d</string>
+
+    <string name="common_phone_input_hint">请输入邮箱</string>
+    <string name="common_phone_input_error">邮箱输入不正确</string>
+
+    <string name="common_password_input_error">请输入密码</string>
+    <string name="common_password_input_unlike">两次密码输入不一致，请重新输入</string>
+
+    <string name="common_code_input_hint">请输入验证码</string>
+    <string name="common_code_send">发送验证码</string>
+    <string name="common_code_send_hint">验证码已发送你邮件，请注意查收</string>
+    <string name="common_code_error_hint">验证码错误，请检查输入</string>
+    <string name="common_code_send_tiptitle">[NIKOTA APP]验证您的 NIKOTA APP ID 电子邮件地址</string>
+    <string name="common_code_send_tipa">&lt;p&gt;[NIKOTA APP]您已选择此电子邮件地址作为您的新 NIKOTA APP ID 。为验证此电子邮件地址属于您，请在电子邮件验证页面输入下方验证码：&lt;/p&gt;</string>
+    <string name="common_code_send_tipfore">&lt;p&gt;[NIKOTA APP]您已选择此电子邮件地址作为您的 NIKOTA APP ID 。为验证此电子邮件地址属于您，请在电子邮件验证页面输入下方验证码：&lt;/p&gt;</string>
+    <string name="common_code_send_tipb">&lt;p&gt;验证码会在此电子邮件发送后一个小时内失效。&lt;/p&gt;&lt;p&gt;您收到此电子邮件的原因：&lt;/p&gt;&lt;p&gt;NIKOTA APP会在您选择电子邮件地址为 NIKOTA APP ID 时对其进行验证。验证电子邮件地址后，您才能使用 NIKOTA APP。&lt;/p&gt;&lt;p&gt;如果您未提出此请求，您可以忽略这封电子邮件。NIKOTA APP ID 只有在验证后才能创建。&lt;/p&gt;</string>
+
+    <string name="common_step_next">下一步</string>
+    <string name="common_step_complete">完成</string>
+    <string name="common_step_commit">提交</string>
+
+    <string name="common_permission_alert">授权提醒</string>
+    <string name="common_permission_fail_1">授权失败，请正确授予权限</string>
+    <string name="common_permission_fail_2">获取权限失败，请手动授予权限</string>
+    <string name="common_permission_fail_3">获取权限失败，请手动授予%s</string>
+    <string name="common_permission_fail_4">没有授予后台定位权限，请您选择"始终允许"</string>
+    <string name="common_permission_goto">前往授权</string>
+
+    <string name="common_permission_calendar">日历权限</string>
+    <string name="common_permission_camera">相机权限</string>
+    <string name="common_permission_contacts">通讯录权限</string>
+    <string name="common_permission_location">定位权限</string>
+    <string name="common_permission_location_background">后台定位权限</string>
+    <string name="common_permission_microphone">麦克风权限</string>
+    <string name="common_permission_phone">电话权限</string>
+    <string name="common_permission_call_log">通话记录权限</string>
+    <string name="common_permission_sensors">身体传感器权限</string>
+    <string name="common_permission_activity_recognition">健身运动权限</string>
+    <string name="common_permission_sms">短信权限</string>
+    <string name="common_permission_storage">存储权限</string>
+
+    <string name="common_permission_install">安装应用权限</string>
+    <string name="common_permission_notification">通知栏权限</string>
+    <string name="common_permission_window">悬浮窗权限</string>
+    <string name="common_permission_setting">系统设置权限</string>
+
+    <string name="common_network_hint">当前没有网络连接，请检查网络设置</string>
+    <string name="common_no_more_data">没有更多数据了</string>
+
+    <string name="common_web_ssl_error_title">当前网站安全证书已过期或不可信\n是否继续浏览</string>
+    <string name="common_web_ssl_error_allow">继续浏览</string>
+    <string name="common_web_ssl_error_reject">返回上一页</string>
+
+    <string name="common_web_location_permission_title">当前网站需要获取您的地理位置</string>
+    <string name="common_web_location_permission_allow">授予</string>
+    <string name="common_web_location_permission_reject">拒绝</string>
+
+    <string name="common_web_call_phone_title">当前号码 %s</string>
+    <string name="common_web_call_phone_allow">拨打</string>
+    <string name="common_web_call_phone_reject">取消</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">加载中&#8230;</string>
+
+    <string name="http_unknown_error">请求出错，未知错误</string>
+    <string name="http_token_error">登录失效，请重新登录</string>
+    <string name="http_data_explain_error">数据解析异常，请稍后</string>
+    <string name="http_server_out_time">服务器请求超时，请稍后再试</string>
+    <string name="http_network_error">请求失败，请检查网络设置</string>
+    <string name="http_response_error">服务器响应异常，请稍后再试</string>
+    <string name="http_server_error">服务器连接异常，请稍后再试</string>
+    <string name="http_request_cancel">请求被中断，请重试</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">空空如也</string>
+    <string name="status_layout_error_request">请求出错，请重试</string>
+    <string name="status_layout_error_network">网络错误，请重试</string>
+    <string name="status_layout_retry">重试</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">请选择地区</string>
+    <string name="address_hint">请选择</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">请选择日期</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">请选择时间</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">发现新版本</string>
+
+    <string name="update_content">更新内容</string>
+
+    <string name="update_no">下次再说</string>
+    <string name="update_yes">立即更新</string>
+
+    <string name="update_permission_hint">必须先要授予权限才能正常下载更新哦</string>
+
+    <string name="update_status_start">正在下载</string>
+    <string name="update_status_running">下载中 %d%%</string>
+    <string name="update_status_successful">下载完成，点击安装</string>
+    <string name="update_status_failed">下载失败，点击重试</string>
+
+    <string name="update_no_update">当前已是最新版本</string>
+
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">升级通知</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">分享到&#8230;</string>
+
+    <string name="share_platform_wechat">微信</string>
+    <string name="share_platform_moment">朋友圈</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ空间</string>
+    <string name="share_platform_link">复制链接</string>
+
+    <string name="share_platform_copy_hint">已复制到剪贴板</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">请输入支付密码</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">至少要选择 %d 项</string>
+    <string name="select_max_hint">最多只能选择 %d 项</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">身份校验</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">再按一次退出</string>
+    <string name="home_nav_index">首页</string>
+    <string name="home_nav_found">分享</string>
+    <string name="home_nav_message">服务</string>
+    <string name="home_nav_me">我的</string>
+
+    <!-- 登录 -->
+    <string name="login_register">注册</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login_text">登录</string>
+
+    <string name="login_other">其他登录方式</string>
+
+    <!-- 注册 -->
+    <string name="register_title">注册</string>
+    <string name="register_hint">手机号仅用于登录和保护账号安全</string>
+    <string name="register_password_hint1">设置6&#8211;18位登录密码</string>
+    <string name="register_password_hint2">请再次输入一次密码</string>
+
+
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+
+
+    <string name="setting_language_simple">简体中文</string>
+    <string name="setting_language_en">英语</string>
+
+
+    <string name="setting_password">修改密码</string>
+    <string name="setting_phone">修改手机</string>
+
+    <string name="setting_auto">自动登录</string>
+    <string name="setting_cache">清空缓存</string>
+
+    <string name="setting_agreement">隐私协议</string>
+    <string name="setting_about">关于我们</string>
+
+    <string name="setting_exit">退出登录</string>
+
+    <!-- 关于 -->
+    <string name="about_title">关于我们</string>
+    <string name="about_author">移动储能专家国际版</string>
+    <string name="about_authorin">移动储能专家</string>
+    <string name="about_version">版本:</string>
+    <string name="versionid">2</string>
+    <string name="versionmini">6</string>
+    <string name="about_copyright">Copyright © 2021 &#8211; 2023</string>
+    <string name="setting_language_switchover">语言切换</string>
+    <string name="language">语言切换</string>
+    <string name="help">帮助中心</string>
+    <string name="checkrefresh">检查更新</string>
+    <string name="setting_update">检查更新</string>
+    <string name="aboutus">关于我们</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">忘记密码</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">设置登录密码</string>
+    <string name="password_reset_phone_hint1">设置6&#8211;18位登录密码</string>
+    <string name="password_reset_phone_hint2">重新输入一次密码</string>
+    <string name="password_reset_input_error">两次密码输入不一致，请重新输入</string>
+    <string name="password_reset_inputnewpwd_error">新密码不能与旧密码一样</string>
+    <string name="password_reset_success">修改成功</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">设置手机号</string>
+    <string name="phone_reset_change_hint">下次登录请使用更换后的新手机号登录</string>
+    <string name="phone_reset_commit">立即绑定</string>
+
+    <string name="phone_reset_commit_succeed">绑定成功</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">个人资料</string>
+    <string name="personal_data_head">头像</string>
+
+    <string name="personal_data_id">用户ID</string>
+    <string name="personal_data_name">昵称</string>
+    <string name="personal_data_name_hint">设置昵称</string>
+
+    <string name="personal_data_address">地区</string>
+    <string name="personal_data_address_hint">请选择</string>
+
+    <string name="personal_data_phone">手机号码</string>
+    <string name="personal_data_phone_hint">立即绑定</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">网页加载中&#8230;</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">图片选择</string>
+    <string name="image_select_all">所有图片</string>
+
+    <string name="image_select_total">共 %d 张</string>
+
+    <string name="image_select_max_hint">本次最多只能选择 %d 张图片</string>
+
+    <string name="image_select_error">无法选中，该图片已经被删除</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">裁剪失败，当前手机不支持裁剪图片</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">视频选择</string>
+    <string name="video_select_all">所有视频</string>
+
+    <string name="video_select_total">共 %d 个</string>
+
+    <string name="video_select_max_hint">本次最多只能选择 %d 个视频</string>
+
+    <string name="video_select_error">无法选中，该视频已经被删除</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">无法启动相机</string>
+    <string name="camera_image_error">目标地址错误</string>
+    <string name="device">设备</string>
+    <string name="adddevice">添加设备</string>
+    <string name="service">关注</string>
+    <string name="tv_scan">扫描</string>
+
+    <string name="scanner_subtitle_not_bonded">新设备</string>
+    <string name="scanner_subtitle_bonded">绑定设备</string>
+
+    <string name="scanner_empty">没有找到设备，请检查设备是否启用</string>
+    <string name="scan_tip_isscanning">正在扫描附近的蓝牙设备</string>
+    <string name="scan_tip_stopscan">我已经停止扫描</string>
+    <string name="scan_time_timeout">本次扫描已经完成</string>
+    <string name="connect">连接</string>
+    <string name="setdevname">请设置设备别名</string>
+    <string name="setdevname_tip">请输入</string>
+    <string name="guest">访客</string>
+    <string name="setting_nickname">修改呢称</string>
+    <string name="close_count">关闭账号</string>
+    <string name="close_count_tip">如何关闭账号，你的数据将永久删除，再也无法找回，你真的要关闭账号么？</string>
+    <string name="isconnected">已连接</string>
+    <string name="isconnecting">正在连接</string>
+    <string name="outconnected">已经断开</string>
+    <string name="dev_status_implus">正在冲电</string>
+    <string name="input">输入</string>
+    <string name="output">输出</string>
+    <string name="ac">交流电</string>
+    <string name="dc12">DC12V/10A </string>
+    <string name="usb_a">USB</string>
+    <string name="usb_fast">QC3.0</string>
+    <string name="usb_c">USB-C</string>
+    <string name="set_devnickname">修改设备名称</string>
+    <string name="set_charge_discharge">充放电上下限</string>
+    <string name="set_ac_inplus">AC充电功率</string>
+    <string name="set_car_inplus">车载充电电流</string>
+    <string name="set_keypad">按键声音</string>
+    <string name="set_hydpoweron">油动加电包充电</string>
+    <string name="set_standby_time">设备待机时间</string>
+    <string name="set_breath_time">息屏时间</string>
+    <string name="set_acstandby_time">交流电待机时间</string>
+    <string name="set_software">固件</string>
+    <string name="dev_type">设备规格</string>
+    <string name="dev_disband">解除绑定</string>
+    <string name="user_contracts">我已阅读并同意</string>
+    <string name="login_check_tip">请仔细阅读用户协议及隐私政策条款并勾选</string>
+
+    <string name="userAndPrivacyAgreement">用户协议与隐私条款</string>
+    <string name="userAndPrivacyAgreementDetail">使用APP表示同意《%1$s》与《%2$s》,请前往点击查看协议详情。</string>-->
+    <string name="userAndPrivacyAgreementPrefix">使用APP表示同意</string>
+    <string name="userAndPrivacyAgreementSuffix">请前往点击查看协议详情。</string>
+    <string name="userAgreement">《<u><font color="#85b84f" >用户协议</font></u>》、</string>
+    <string name="privacyAgreement">《<u><font color="#85b84f">隐私条款</font></u>》</string>
+    <string name="detail">详情</string>
+    <string name="agree">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="userrefuse">你拒绝了...</string>
+    <string name="success">修改成功</string>
+    <string name="close_count_success">注销成功</string>
+    <string name="setting_nickname_tip">请输入字符长度小于10的昵称</string>
+    <string name="countryno_hip">请输入国际电话区号</string>
+    <string name="phone_hint">请输入电话号码</string>
+    <string name="oldpassword_hip">请输入旧密码</string>
+    <string name="newpassword_hip">请输入新密码</string>
+    <string name="surepassword_hint">请再次输入新密码</string>
+    <string name="login_tip">请先登录</string>
+    <string name="password_complexa">密码强度较强</string>
+    <string name="password_complexb">密码强度适中</string>
+    <string name="password_complexc">密码强度较强</string>
+
+    <string name="log_impluse100">我冲电完成100%，请放心使用</string>
+    <string name="log_implusen">我冲电完成%1$d%%，请继续保持冲电状态</string>
+    <string name="log_connect">我已经被连接，谢谢关注我，使用我，爱护我</string>
+    <string name="log_disconnect">我已经断开，请检查网络，或蓝牙，或是我小睡一会吧</string>
+    <string name="log_alert">我电量不足了，请先关闭食客们吧，回家让我补充点能量，谢谢！</string>
+
+    <string name="create_group">创建新家庭</string>
+    <string name="myfamliy">我的家庭</string>
+    <string name="add_group">添加新成员</string>
+    <string name="group_user">家庭成员</string>
+    <string name="setting_groupname">设置家庭名称</string>
+    <string name="set_groupname_tip">输入长度小于20的字符</string>
+    <string name="set_content_tip">你还没有输入呢</string>
+    <string name="my_qrcode">我的二维码</string>
+    <string name="qrcode_indate">二维码有效期为五分钟</string>
+    <string name="qrcode_use_tip">使用NIKOTA APP扫描二维码，添加我为成员，共享我的设备</string>
+    <string name="setting_newgroupname">创建新家庭</string>
+    <string name="scan_add_group_user">扫码添加成员</string>
+    <string name="scan_add_group_user_tip">扫对方的二维码</string>
+    <string name="scan_qrcode_tip">扫描二维码</string>
+    <string name="scan_qrcode_find_tip"><![CDATA[可前往\"我的\">\"我的二维码\"获取二维码]]></string>
+    <string name="light_lamp">轻触照亮</string>
+    <string name="light_nolamp">轻触关灯</string>
+    <string name="scan_error_invid">二维码已过期</string>
+    <string name="scan_suc_user">已经扫描的用户</string>
+    <string name="add_group_unselect">未选择</string>
+    <string name="add_group_select">已选择</string>
+    <string name="disconnect_tip">即将返回主页，正在断开扫描任务...</string>
+    <string name="account">账号：</string>
+    <string name="select_dev">选择设备</string>
+    <string name="norecord">没有记录</string>
+    <string name="bysys">随系统</string>
+    <string name="register_return">返回</string>
+    <string name="user_info_error">获取用户信息失败</string>
+    <string name="ac_one">AC input</string>
+    <string name="upgrade">升级</string>
+    <string name="upgrate_start">开始升级</string>
+    <string name="update_ready">已经准备就绪</string>
+    <string name="binfile_error">.bin文件错误</string>
+    <string name="dev_poweron">开机</string>
+    <string name="dev_lightscreen">亮屏</string>
+    <string name="dev_light">照明</string>
+    <string name="ac_one_input">AC Input</string>
+    <string name="acout">ACOUT</string>
+    <string name="dc">DC</string>
+    <string name="usb">USB</string>
+    <string name="acin">ACIN</string>
+    <string name="rechargingtime">充电时间</string>
+    <string name="chargingtime">放电时间</string>
+    <string name="wifi">WIFI</string>
+    <string name="fourg">4G</string>
+    <string name="fiveg">5G</string>
+    <string name="watts">Watts</string>
+    <string name="dev_currentversion">当前版本</string>
+    <string name="controlboardlist">控制板列表</string>
+    <string name="llc">LLC</string>
+    <string name="pfc">PFC</string>
+    <string name="select_controlboard">选择要升级的控制板</string>
+    <string name="dev_selectupgradeversion">选择要升级的版本</string>
+    <string name="mins">分钟</string>
+    <string name="ac_output">AC oupt</string>
+    <string name="dev_type_spec">设备型号</string>
+    <string name="dev_macaddress">MAC地址</string>
+    <string name="dev_id">序列号</string>
+    <string name="dev_batterycells">电芯类型</string>
+    <string name="dev_voltagelevel">电压等级</string>
+    <string name="dev_dcversion">DC软件版本</string>
+    <string name="dev_llcversion">LLC软件版本</string>
+    <string name="dev_pfcversion">PFC软件版本</string>
+    <string name="dev_inbound">设备入库</string>
+    <string name="set_dev_type_">设置设备型号</string>
+    <string name="set_dev_type">设备型号</string>
+    <string name="set_profile_id">设备版本</string>
+    <string name="dev_onecorecode">设备1芯编码</string>
+    <string name="dev_twocorecode">设备2芯编码</string>
+    <string name="dev_dcsubversion">DC软件子版本</string>
+    <string name="dev_llcsubversion">LLC软件子版本</string>
+    <string name="dev_pfcsubversion">PFC软件子版本</string>
+    <string name="dev_frequency">频率</string>
+    <string name="dev_bmsversion">BMS版本</string>
+    <string name="dev_status_plus">正在输出</string>
+    <string name="common_str_length_error">输入太多内容了</string>
+    <string name="delete_alert">警告</string>
+    <string name="delete_alert_info">你确认要解绑设备么？</string>
+    <string name="inboundsuccess">入库成功</string>
+    <string name="setting_language_success">语言设置成功,将在应用全部重起后生效</string>
+    <string name="dev_add">添加</string>
+    <string name="dev_moodscreen">氛围</string>
+    <string name="dev_status_sum_implus">太阳能冲电中</string>
+    <string name="dev_standby">待机</string>
+    <string name="hours">小时</string>
+    <string name="update_success">本次升级成功</string>
+    <string name="dev_dccode">DC芯片编码</string>
+    <string name="dev_pfccode">PFC芯片编码</string>
+    <string name="dev_llccode">LLC芯片编码</string>
+    <string name="dev_lastupgradetime">升级时间：</string>
+    <string name="upgrate_alter_tip">一旦执行升级操作，中途不可以中断，中断将可引起设备系统软件丢失，甚至会出现设备无法正常工作！</string>
+    <string name="upgrade_error">连接设备异常中断，本次升级失败</string>
+    <string name="upgrate_alter">确实要执行设备升级操作么?</string>
+    <string name="update_finish">本次升级已经结束</string>
+    <string name="group_del">删除用户组</string>
+    <string name="group_del_tip">确定要删除自己创建的用户组么？</string>
+    <string name="admin_user_group_del_error">组管理员用户</string>
+    <string name="group_user_del">删除组成员</string>
+    <string name="group_user_del_tip">确定要删除组成员？</string>
+    <string name="group_user_del_me">退出组</string>
+    <string name="group_user_del_me_tip">确定要退出组么？</string>
+    <string name="input_fast">快充</string>
+    <string name="dev_set_implus">预充电量值设置</string>
+    <string name="dev_set_implus_val">预充电量值</string>
+    <string name="dev_set_discharging_val">预放电量值</string>
+    <string name="dev_set_discharging">预放电量值设置</string>
+    <string name="dev_set_fastin">慢充</string>
+    <string name="ac_yboost">YBOOST</string>
+    <string name="open_yboost_title">确定要打开YBOOST吗?</string>
+    <string name="open_yboost_tip">YBOOST功能支持大部分的电器使用但是在使用过程中请注意以下事项:\n1、请只接入一个设备，以免多个用电器使用时因电压变化影响其他电器的正常使用;\n2、YBOOST更适用于吹风筒、厨房家电、工具等电器;\n3、对电压有严格要求的电器，请充分测试后使用;\n4、YBOOST状态下请勿接入家庭电网，否则会触发低压保护而跳闸。</string>
+    <string name="ac_yboost_effect">boost 生效中</string>
+    <string name="binfile_error_md5">文件校验失败</string>
+    <string name="save_title">保存</string>
+    <string name="set_error_tip">设置失败</string>
+    <string name="userAgreementtwo">《<u><font color="#85b84f" >用户协议 </font></u>》</string>
+    <string name="bind_dev_success_tip">绑定设备成功</string>
+    <string name="unbind_dev_success">解绑设备成功</string>
+    <string name="scan_success">扫码成功</string>
+    <string name="unbind_dev_id_error">ID 错误</string>
+    <string name="unbind_dev_fail">解绑失败</string>
+    <string name="appleid_user">果粉一枚</string>
+    <string name="ble_deinied_info">被永久拒绝授权，请手动授予蓝牙权限</string>
+    <string name="ble_deinied_error">获取蓝牙权限失败</string>
+    <string name="bind_dev_error_tip">绑定失败，设备已经被绑定</string>
+    <string name="bind_dev_macerror_tip">绑定失败，设备地址错误</string>
+    <string name="update_no_update_googleplay">请在Google  play 更新APP</string>
+    <string name="testdevice">测试</string>
+    <string name="adddevicelong">添加新设备</string>
+    <string name="ledscreen">LED 显示屏</string>
+    <string name="chargingfinish_ctitle">充电通知</string>
+    <string name="chargingfinish_ctext">设备已经充满</string>
+    <string name="chargingfinish_subt">充电达到</string>
+
+    <string name="setting_language_ukr" >乌克兰语</string>
+    <string name="charginglow_ctitle" >电量不足</string>
+    <string name="charginglow_ctext" >电量已低于20%，请及时充电</string>
+</resources>

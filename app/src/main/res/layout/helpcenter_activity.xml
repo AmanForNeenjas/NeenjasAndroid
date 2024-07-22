@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.HelpCenterActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/help" />
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/tv_select_dev_tip"
+        android:layout_gravity="left"
+        android:textColor="@color/table_cell_font_dark"
+        android:textSize="@dimen/font_xlg_size"
+        android:text="@string/select_dev"
+         />
+    />
+    <View
+        android:id="@+id/v_tab_design_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_2"
+        android:layout_alignStart="@id/tv_select_dev_tip"
+        android:layout_alignEnd="@id/tv_select_dev_tip"
+        android:layout_alignBottom="@id/tv_select_dev_tip"
+        android:background="@color/logo_color_raw" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_devicetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:spanCount="3"
+        tools:itemCount="20"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/rc_devtype_item_design"
+        tools:spanCount="3" />
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AboutActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/about_title" />
+
+    <com.hjq.widget.view.ScaleImageView
+        android:layout_width="@dimen/dp_192"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_40"
+        app:srcCompat="@drawable/logoraw40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_author"
+            android:textColor="@color/font_color_dark"
+            android:textSize="@dimen/sp_18" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_version"
+                android:textColor="@color/font_color_base_three"
+                android:textSize="@dimen/sp_12" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="@dimen/dp_10"
+                android:id="@+id/tv_app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_base_two"
+                tools:text="1.1.0"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:autoLink="all"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/dp_20"
+            android:text=""
+            android:textColor="@color/font_color_base_two"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tx_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_20"
+        android:text="@string/about_copyright"
+        android:textColor="#BDBDBD"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

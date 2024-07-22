@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AddDevActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_adddev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/adddevice" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:orientation="vertical">
+            <com.hjq.widget.layout.RoundSettingBar
+                android:id="@+id/sb_scan_tip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_15"
+
+                app:bar_lineVisible = "false"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/scan_tip_isscanning">
+
+                <com.hjq.widget.view.SwitchButton
+                    android:id="@+id/sb_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginHorizontal="@dimen/dp_15" />
+
+            </com.hjq.widget.layout.RoundSettingBar>
+
+
+            <com.hjq.widget.view.NestedListView
+                android:id="@+id/lv_scandev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_20"
+
+
+                tools:listitem="@layout/scandev_lst_row" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

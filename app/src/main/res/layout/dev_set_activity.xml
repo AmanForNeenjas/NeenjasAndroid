@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SettingActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/setting_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hjq.widget.layout.RoundTopSettingBar
+                android:id="@+id/sb_devnickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/set_devnickname"
+
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+
+                tools:bar_rightText="META2000" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_type"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_implus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_set_implus_val"
+
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_discharging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_set_discharging_val"
+
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_setfastin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/dev_set_fastin"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                >
+                <com.hjq.widget.view.SwitchButton
+                    android:id="@+id/sb_setting_fastin_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginHorizontal="@dimen/dp_15" />
+
+            </com.hjq.widget.layout.SettingBar>
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_setyboost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/ac_yboost"
+                app:bar_lineVisible = "false"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                >
+                <com.hjq.widget.view.SwitchButton
+                    android:id="@+id/sb_setting_yboost_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginHorizontal="@dimen/dp_15" />
+
+            </com.hjq.widget.layout.SettingBar>
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_software"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/set_software"
+                app:bar_rightDrawable="@drawable/arrows_right_ic" />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dev_inbound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_inbound"
+                app:bar_rightDrawable="@drawable/arrows_right_ic" />
+            <com.hjq.widget.layout.RoundBottomSettingBar
+                android:id="@+id/sb_dev_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/help"
+                app:bar_lineVisible = "false"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dev_disband"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dev_disband"
+                app:bar_rightDrawable="@drawable/arrows_right_ic"
+                android:layout_margin="@dimen/dp_20"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@drawable/corners_dev"
+    android:padding="@dimen/dp_10">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_find_corner"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_30"
+        app:srcCompat="@drawable/device"
+        tools:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_connectdevname"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_color_dark"
+            android:textSize="@dimen/font_sb_size"
+            tools:text="MATE2000" />
+
+        <TextView
+            android:id="@+id/tv_dtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_color_light"
+            android:textSize="@dimen/font_sm_size"
+            tools:text="MATE2000" />
+        />
+
+        <com.hjq.widget.view.GoodProgressView
+            android:id="@+id/gpv_impluse"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_2"
+
+            app:endColor="@color/main_color_progress_end"
+            app:startColor="@color/main_color_progress_start" />
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.hjq.widget.view.GoodProgressView
+                android:id="@+id/gpv_impluse"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_impluse"
+                />
+        </LinearLayout>
+        <com.hjq.widget.view.BatteryDrawView
+            android:id="@+id/pb_impluse"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp_8"
+            android:layout_marginTop="12dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/pb_impluse"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_impluse"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="141dp"
+
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_color_base"
+                android:textSize="@dimen/font_base_size" />
+            />
+        </RelativeLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

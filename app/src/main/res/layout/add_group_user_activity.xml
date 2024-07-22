@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AddGroupUserActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_selectuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:leftIcon="@drawable/ic_close"
+        app:rightIcon="@drawable/ic_check"
+        app:title="@string/add_group_unselect" />
+    <com.hjq.widget.layout.RoundSettingBar
+        android:id="@+id/sb_select_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_20"
+        app:bar_leftDrawable="@drawable/ic_scan"
+        app:bar_leftText="@string/scan_add_group_user"
+        app:bar_lineVisible = "false"
+        app:bar_leftTextColor="@color/table_cell_font_dark"
+        app:bar_rightTextColor="@color/table_cell_font_light"
+        app:bar_rightDrawable="@drawable/arrows_right_ic"
+        app:bar_rightText="@string/scan_add_group_user_tip"
+        />
+    <com.hjq.widget.view.DrawableTextView
+        android:id="@+id/tv_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/font_color_dark"
+        android:drawableStart="@drawable/ic_scanuser"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="@string/scan_suc_user"
+        app:drawableHeight="@dimen/dp_20"
+        app:drawableWidth="@dimen/dp_20" />
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_add_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="start"
+        android:paddingTop="25dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="25dp"
+        android:text="@string/add_group"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        app:shape="rectangle"
+        app:shape_radius="@dimen/dp_10"
+        app:shape_shadowColor="@color/black10"
+        app:shape_shadowSize="10dp"
+        app:shape_solidColor="@color/table_cell_color" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_status_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_find_circle"
+            app:srcCompat="@drawable/example_bg"
+            android:layout_width="@dimen/dp_46"
+            android:layout_height="@dimen/dp_46"
+            tools:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black70"
+                tools:text="MATE2000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@{time}"
+                android:textColor="@color/black50"
+                android:textSize="12sp"
+                tools:text="2023-01-01" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="5dp"
+        android:lineSpacingExtra="4dp"
+        android:text="@{bean.content}"
+        android:textColor="@color/black90"
+        android:textSize="15sp"
+        tools:text="我冲电完成，请放心使用" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_find_corner"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/example_bg"
+        tools:scaleType="centerCrop" />
+</LinearLayout>

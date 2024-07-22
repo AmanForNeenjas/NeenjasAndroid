@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.DevUpgradeFileActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/set_software" />
+            <LinearLayout
+                android:id="@+id/ll_login_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/dp_20"
+
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:orientation="vertical">
+
+
+                <com.hjq.widget.layout.RoundTopSettingBar
+                    android:id="@+id/sb_setting_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    app:bar_lineVisible = "false"
+                    app:bar_leftTextColor="@color/table_cell_font_dark"
+                    app:bar_rightTextColor="@color/table_cell_font_light"
+                    app:bar_leftText="@string/select_controlboard"
+                    app:bar_leftDrawable="@drawable/ic_upgrade_rounded"
+                    />
+                <com.hjq.widget.layout.SettingBar
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/table_cell_color"
+                    app:bar_leftTextColor="@color/table_cell_font_dark"
+                    app:bar_rightTextColor="@color/table_cell_font_light"
+                    app:bar_lineDrawable ="@color/table_cell_line_dark"
+                    app:bar_leftText="@string/dc">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_dc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginHorizontal="@dimen/dp_15"
+                        android:background="@null"
+                        android:button="@drawable/radiobutton_selector"
+                        android:checked="true" />
+
+                </com.hjq.widget.layout.SettingBar>
+                <com.hjq.widget.layout.SettingBar
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/table_cell_color"
+                    app:bar_leftTextColor="@color/table_cell_font_dark"
+                    app:bar_rightTextColor="@color/table_cell_font_light"
+                    app:bar_lineDrawable ="@color/table_cell_line_dark"
+                    app:bar_leftText="@string/llc">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_llc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginHorizontal="@dimen/dp_15"
+                        android:background="@null"
+                        android:button="@drawable/radiobutton_selector"
+                        android:checked="true" />
+
+                </com.hjq.widget.layout.SettingBar>
+                <com.hjq.widget.layout.RoundBottomSettingBar
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bar_leftTextColor="@color/table_cell_font_dark"
+                    app:bar_rightTextColor="@color/table_cell_font_light"
+                    app:bar_lineVisible = "false"
+                    app:bar_leftText="@string/pfc">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_pfc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginHorizontal="@dimen/dp_15"
+                        android:background="@null"
+                        android:button="@drawable/radiobutton_selector"
+                        android:checked="true" />
+
+                </com.hjq.widget.layout.RoundBottomSettingBar>
+
+                <com.hjq.widget.view.SubmitButton
+                    android:id="@+id/btn_checkrefresh"
+                    style="@style/ButtonStyle"
+                    android:layout_width="@dimen/dp_260"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:text="@string/checkrefresh" />
+
+            </LinearLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <com.hjq.shape.layout.ShapeLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:shape="rectangle"
+                    app:shape_solidColor="@color/table_cell_color"
+                    android:layout_marginLeft="@dimen/dp_10"
+
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:shape_topLeftRadius="@dimen/dp_20"
+                    app:shape_topRightRadius="@dimen/dp_20"
+                    app:shape_bottomLeftRadius="@dimen/dp_20"
+                    app:shape_bottomRightRadius="@dimen/dp_20"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_otapackage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/dp_10" />
+                </com.hjq.shape.layout.ShapeLinearLayout >
+            </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.DevSetDisChargingActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+
+        app:title="@string/dev_set_discharging" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <!--DC 列表-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="vertical">
+        <SeekBar
+            android:id="@+id/sb_implus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:max="100"
+            android:maxHeight="@dimen/dp_12"
+            android:minHeight="@dimen/dp_12"
+            android:paddingHorizontal="0dp"
+            android:progress="0"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progressDrawable="@drawable/seekbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_input"
+            android:thumbOffset="0dp" />
+        <TextView
+            android:id="@+id/tv_setimplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color_dark"
+            android:text="100/100"
+            >
+
+        </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_login_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="vertical">
+
+
+
+            <com.hjq.widget.view.SubmitButton
+                android:id="@+id/btn_confim"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_40"
+
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/common_confirm" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

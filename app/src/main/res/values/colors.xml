@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App 样式中引用的颜色 -->
+    <color name="common_primary_color">@color/black</color>
+    <color name="common_primary_dark_color">@color/white</color>
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="common_window_background_color">#F4F4F4</color>
+    <color name="common_text_color">#333333</color>
+    <color name="common_text_hint_color">@color/panda</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="common_button_pressed_color">#AA5A8DDF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <!-- 分割线的颜色 -->
+    <color name="common_line_color">#ECECEC</color>
+    <!-- 矢量图标的颜色 -->
+    <color name="common_icon_color">#7C7C7C</color>
+
+    <!-- 对话框确认按钮的文本颜色 -->
+    <color name="common_confirm_text_color">#007AFF</color>
+    <!-- 对话框取消按钮的文本颜色 -->
+    <color name="common_cancel_text_color">#F44336</color>
+
+    <!--字体颜色-->
+    <color name="font_color_dark">#192033</color>
+    <color name="font_color_base">#606266</color>
+    <color name="font_color_base_two">#696B73</color>
+    <color name="font_color_base_three">#A4A4A4</color>
+    <color name="font_color_light">#909399</color>
+    <color name="font_color_disabled">#C0C4CC</color>
+    <color name="font_color_spec">#4399fc</color>
+    <color name="font_color_username">#A4A4A4</color>
+
+    <color name="logo_color_raw">#00B4E6</color>
+    <color name="main_color_baselight">#50E0E9</color>
+    <color name="main_color_blue">#4992FF</color>
+    <color name="main_color_gray">#BEBEBE</color>
+    <color name="main_color_gray_ic">#969696</color>
+    <color name="main_color_green">#45D69B</color>
+    <color name="main_color_light">#F3F8FF</color>
+    <color name="main_color_progress_base">#ECF4FF</color>
+    <color name="main_color_progress_start">#0066FF</color>
+    <color name="main_color_progress_end">#96F9FF</color>
+    <color name="main_color_ac_back">#E5FFEF</color>
+    <color name="main_color_wait">#E5F3F4</color>
+
+    <color name="table_cell_color">#FFFFFF</color>
+    <color name="table_cell_font_dark">#192033</color>
+    <color name="table_cell_font_light">#A4A4A4</color>
+    <color name="table_cell_line_dark">#F2FFFFFF</color>
+    <color name="adddev_color_blue">#4992FF</color>
+    <color name="adddev_stroke_color_blue">#4992FF</color>
+    <color name="nav_bak_color">#FFFFFF</color>
+    <color name="titlebar_font_color_dark">#000000</color>
+    <color name="dialog_title_font">#333333</color>
+    <color name="dialog_tip_font">#666666</color>
+    <color name="dialog_input_bak">#FFFFFF</color>
+    <color name="ic_setting_color">#2c2c2c</color>
+    <color name="implus_text_color">#ff4d4d4d</color>
+    <color name="ic_input_color">#686B73</color>
+    <color name="ic_input_font_color">#73000000</color>
+    <color name="ic_usb_font_color">#000000</color>
+    <color name="ic_socket_color">#333</color>
+    <color name="light_control_color">#FFFFFF</color>
+    <color name="light_control_end_color">#E5F3F4</color>
+    <color name="light_control_open_color">#0066FF</color>
+    <color name="line_bak_color">#ececec</color>
+    <color name="curren_ver_color">#1C2E45</color>
+    <color name="splash_font_color">#99000000</color>
+    <color name="toast_back_color">#88000000</color>
+    <color name="dev_infoshadow_color">@color/white</color>
+
+</resources>

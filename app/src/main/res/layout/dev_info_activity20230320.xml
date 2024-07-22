@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MineFragment">
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightIcon="@drawable/ic_setting"
+        android:id="@+id/tb_devinfo_title"
+
+        app:title="设备详情" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <!--<androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_person_data_avatar"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_160"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dev192"
+        tools:src="@drawable/dev192" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--显示屏区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            >
+             <com.hjq.shape.layout.ShapeLinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+
+            android:paddingTop="@dimen/dp_5"
+
+
+            android:orientation="horizontal"
+            app:shape="rectangle"
+            app:shape_solidColor="@color/white"
+            app:shape_topLeftRadius="@dimen/dp_20"
+            app:shape_topRightRadius="@dimen/dp_20"
+            app:shape_bottomLeftRadius="@dimen/dp_20"
+            app:shape_bottomRightRadius="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            >
+            <!--左侧布局-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <!--左一行-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dev_showtime_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/rechargingtime"
+                        android:textAlignment="center"
+                        android:textScaleX="0.8"
+                        android:textSize="@dimen/sp_10" />
+
+                </RelativeLayout>
+                <!--左二行-->
+                <!--左三行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.5">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center">
+
+                        <TextView
+                            android:id="@+id/dev_showtime_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="00"
+                            android:textSize="@dimen/sp_34"
+                            tools:text="99" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_30"
+                        android:text=":"
+                        tools:text=":"
+                        />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center">
+
+                        <TextView
+                            android:id="@+id/dev_showtime_mins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="00"
+                            android:textSize="@dimen/sp_34"
+                            tools:text="00" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--左四行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:layout_weight="1">
+                    <TextView
+
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_10"
+                        android:text="Hours"
+                        tools:text="Hours"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_25"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_10"
+                        android:text="@string/mins"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--中间布局-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.hjq.widget.view.CircleProgressView
+                        android:id="@+id/cpv_implus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:backWidth="@dimen/dp_5"
+                        app:progColor="@color/logo_color_raw"
+                        app:backColor="#E6DBDBDB"
+                        app:progWidth="@dimen/dp_10"
+                        app:progress="0" />
+                    <TextView
+                        android:id="@+id/tv_implus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="#ff4d4d4d"
+                        android:textSize="@dimen/sp_25" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!--右侧布局-->
+        </com.hjq.shape.layout.ShapeLinearLayout>
+        </LinearLayout>
+        <!--主要状态区-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/dev_corners" />
+
+        <TextView
+            android:id="@+id/dev_isconnected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dp_50"
+            android:textSize="@dimen/sp_20"
+            tools:text="@string/isconnected" />
+
+        <TextView
+            android:id="@+id/dev_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_50"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_18"
+            tools:text="@string/dev_status_implus" />
+    </RelativeLayout>
+
+        <!--主要输入输出区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_15"
+            >
+            <com.hjq.shape.layout.ShapeLinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_90"
+
+                android:paddingTop="@dimen/dp_5"
+
+
+                android:orientation="horizontal"
+                app:shape="rectangle"
+                app:shape_solidColor="@color/white"
+                app:shape_topLeftRadius="@dimen/dp_20"
+                app:shape_topRightRadius="@dimen/dp_20"
+                app:shape_bottomLeftRadius="@dimen/dp_20"
+                app:shape_bottomRightRadius="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                >
+                <!--左侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <!--左一行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="2">
+                        <TextView
+                            android:id="@+id/dev_input_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="W"
+                            android:textSize="@dimen/font_sm_size" />
+
+                    </LinearLayout>
+
+
+                    <!--左二行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1.5">
+                        <TextView
+                            android:id="@+id/dev_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/input"
+                            android:textSize="@dimen/font_sb_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--右侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <!--右一行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="2">
+                        <TextView
+                            android:id="@+id/dev_output_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="W"
+                            android:textSize="@dimen/font_sm_size" />
+
+                    </LinearLayout>
+
+
+                    <!--右二行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1.5">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/output"
+                            android:textSize="@dimen/font_sb_size" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.hjq.shape.layout.ShapeLinearLayout>
+        </LinearLayout>
+
+        <!--主要DC输出区-->
+        <!--主要输入输出区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            >
+            <com.hjq.shape.layout.ShapeLinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+
+                android:paddingTop="@dimen/dp_5"
+
+
+                android:orientation="horizontal"
+                app:shape="rectangle"
+                app:shape_solidColor="@color/white"
+                app:shape_topLeftRadius="@dimen/dp_20"
+                app:shape_topRightRadius="@dimen/dp_20"
+                app:shape_bottomLeftRadius="@dimen/dp_20"
+                app:shape_bottomRightRadius="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                >
+                <!--左侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <!--左一行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_30"
+                                android:layout_height="@dimen/dp_30"
+                                android:src="@drawable/ic_usb_port" />
+
+                            <TextView
+                                android:id="@+id/dev_usba_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/usb_a"
+                                android:textSize="@dimen/sp_8" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--左二行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/dev_usb_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_6"
+                            android:text="W"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#c8c8c8"
+                    android:layout_gravity="center"
+                    />
+                <!--左侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <!--左一行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@drawable/ic_usb_c" />
+
+                        <TextView
+                            android:id="@+id/dev_usbctwo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/usb_c"
+                            android:textSize="@dimen/sp_8"  />
+
+                    </LinearLayout>
+
+
+                    <!--左二行-->
+                    <!--左二行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/dev_usbc_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_6"
+                            android:text="W"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#c8c8c8"
+                    android:layout_gravity="center"
+                    />
+                <!--左侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <!--左一行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_25"
+                            android:src="@drawable/ic_charge_circle_outline" />
+
+                        <TextView
+                            android:id="@+id/dev_dcv_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/dc12"
+                            android:textSize="@dimen/sp_8"  />
+
+                    </LinearLayout>
+
+
+                    <!--左二行-->
+                    <!--左二行-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/dev_dcv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_6"
+                            android:text="W"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#c8c8c8"
+                    android:layout_gravity="center"
+                    />
+                <!--右侧布局-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_dc_control"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:src="@drawable/reboot_ic"
+
+                        />
+
+
+                </LinearLayout>
+
+            </com.hjq.shape.layout.ShapeLinearLayout>
+        </LinearLayout>
+
+        <!--主要AC输出区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            >
+            <com.hjq.shape.layout.ShapeLinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+
+                android:paddingTop="@dimen/dp_5"
+
+
+                android:orientation="horizontal"
+                app:shape="rectangle"
+                app:shape_solidColor="@color/white"
+                app:shape_topLeftRadius="@dimen/dp_20"
+                app:shape_topRightRadius="@dimen/dp_20"
+                app:shape_bottomLeftRadius="@dimen/dp_20"
+                app:shape_bottomRightRadius="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/sp_22"
+                        android:layout_height="@dimen/sp_22"
+                        android:src="@drawable/ic_outline_energy_socket" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ac_output"
+                        android:textSize="@dimen/sp_8" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="top"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/dev_acoutput_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_25"
+                            tools:text="0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_6"
+                            android:text="W"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#c8c8c8"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_ac_control"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:src="@drawable/reboot_ic"
+
+                        />
+
+
+                </LinearLayout>
+
+            </com.hjq.shape.layout.ShapeLinearLayout>
+        </LinearLayout>
+
+        <!--照明-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_15"
+            >
+            <com.hjq.shape.layout.ShapeLinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+
+                android:paddingTop="@dimen/dp_5"
+
+
+                android:orientation="horizontal"
+                app:shape="rectangle"
+                app:shape_solidColor="@color/white"
+                app:shape_topLeftRadius="@dimen/dp_20"
+                app:shape_topRightRadius="@dimen/dp_20"
+                app:shape_bottomLeftRadius="@dimen/dp_20"
+                app:shape_bottomRightRadius="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/dev_light"
+                        android:layout_centerVertical="true"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_light_less_control"
+                        android:layout_width="@dimen/sp_16"
+                        android:layout_height="@dimen/sp_16"
+                        android:src="@drawable/ic_light_control" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_lightmore_control"
+                        android:layout_width="@dimen/sp_20"
+                        android:layout_height="@dimen/sp_20"
+                        android:src="@drawable/ic_ambient_light" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_light_sos_control"
+                        android:layout_width="@dimen/sp_20"
+                        android:layout_height="@dimen/sp_20"
+                        android:src="@drawable/ic_light_outline" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_light_close_control"
+                        android:layout_width="@dimen/sp_20"
+                        android:layout_height="@dimen/sp_20"
+                        android:src="@drawable/ic_light_off" />
+
+                </LinearLayout>
+
+            </com.hjq.shape.layout.ShapeLinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <!--开机 及 亮屏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <!--亮屏-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_5"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/sp_14"
+                        android:src="@drawable/dev_corners" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:text="@string/dev_lightscreen"
+                        android:layout_centerVertical="true"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_screen_control"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:src="@drawable/ic_outline_sharp" />
+                </RelativeLayout>
+                <!--氛围灯-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_5"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/sp_14"
+                        android:src="@drawable/dev_corners" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:text="@string/dev_moodscreen"
+                        android:layout_centerVertical="true"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mood_control"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:src="@drawable/ic_outline_sharp" />
+                </RelativeLayout>
+                <!--灭蚊-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_5"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/dev_corners" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:text="IRL"
+                        android:layout_centerVertical="true"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_buzkill_control"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:src="@drawable/ic_buzkill" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--照明 及 灭蚊-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--照明-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_5"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

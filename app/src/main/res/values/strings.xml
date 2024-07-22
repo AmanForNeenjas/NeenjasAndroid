@@ -1,0 +1,481 @@
+<resources>
+    <string name="app_name">NIKOTA</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">Loading&#8230;</string>
+
+    <string name="common_unknown_error">Unknown Error</string>
+
+    <string name="common_confirm">Confirm</string>
+    <string name="common_cancel">Cancel</string>
+
+    <string name="common_year">Year</string>
+    <string name="common_month">Month</string>
+    <string name="common_day">Day</string>
+
+    <string name="common_hour">Hour</string>
+    <string name="common_minute">Minute</string>
+    <string name="common_second">Second</string>
+
+    <string name="common_crash_hint">The app has a little accident and is restarting</string>
+
+    <string name="common_network_error">The current network is not available. Please check the network settings</string>
+
+    <string name="common_video_error_not_support">This video is not suitable for playing on this device</string>
+    <string name="common_video_error_unknown">The video Cannot play</string>
+    <string name="common_video_error_supplement">Type of Error：%d，Code of Error：%d</string>
+
+    <string name="common_phone_input_hint">Please enter email</string>
+    <string name="common_phone_input_error">Your mailbox is incorrect</string>
+
+    <string name="common_password_input_error">Please enter a password</string>
+    <string name="common_password_input_unlike">The two passwords are inconsistent. Please re-enter</string>
+
+    <string name="common_code_input_hint">Enter the PIN</string>
+    <string name="common_code_send">Send PIN</string>
+    <string name="common_code_send_hint">The verification code has been sent to you. Please check</string>
+    <string name="common_code_error_hint">Verification code error, please check the enter</string>
+    <string name="common_code_send_tiptitle">[NIKOTA APP]Check your NIKOTA APP ID email</string>
+    <string name="common_code_send_tipa">&lt;p&gt;[NIKOTA APP]You have selected this email address as your new  NIKOTA APP ID 。To verify that this email address belongs to you，Please enter the verification code below on the email verification page：&lt;/p&gt;</string>
+    <string name="common_code_send_tipfore">&lt;p&gt;[NIKOTA APP]To verify that this email address belongs to you，Please enter the verification code below on the email verification page：：&lt;/p&gt;</string>
+    <string name="common_code_send_tipb">&lt;p&gt;The verification code will expire within one hour after this email is sent 。&lt;/p&gt;&lt;p&gt;Why you received this email：&lt;/p&gt;&lt;p&gt;Nikota app will verify your email address when you use nikota app。You cannot use the email address until you verify it 。&lt;/p&gt;&lt;p&gt;If you do not make this request, you can ignore this email 。NIKOTA APP ID  Can only be created after verification 。&lt;/p&gt;</string>
+
+    <string name="common_step_next">Next</string>
+    <string name="common_step_complete">Finish</string>
+    <string name="common_step_commit">Submit</string>
+
+    <string name="common_permission_alert">Authorization reminder</string>
+    <string name="common_permission_fail_1">Authorization failed. Please grant permissions correctly</string>
+    <string name="common_permission_fail_2">Failed to obtain permissions. Please grant permissions manually</string>
+    <string name="common_permission_fail_3">Failed to obtain permission, please grant it manually%s</string>
+    <string name="common_permission_fail_4">Background location permission is not granted，please select "always allow;"</string>
+    <string name="common_permission_goto">Go to Authorization</string>
+
+    <string name="common_permission_calendar">Calendar permissions</string>
+    <string name="common_permission_camera">Camera permissions</string>
+    <string name="common_permission_contacts"> Contacts permissions</string>
+    <string name="common_permission_location"> Location permissions</string>
+    <string name="common_permission_location_background">Location Always permissions</string>
+    <string name="common_permission_microphone">Microphone permissions</string>
+    <string name="common_permission_phone">Phone permissions</string>
+    <string name="common_permission_call_log">CALL_LOG permissions</string>
+    <string name="common_permission_sensors">BODY_SENSORS permissions</string>
+    <string name="common_permission_activity_recognition">Fitness permissions</string>
+    <string name="common_permission_sms">SMS permissions</string>
+    <string name="common_permission_storage">Storage permissions</string>
+
+    <string name="common_permission_install">Install app permissions</string>
+    <string name="common_permission_notification">Notification bar permissions</string>
+    <string name="common_permission_window">Suspended window permissions</string>
+    <string name="common_permission_setting">System setting permissions</string>
+
+    <string name="common_network_hint">There is currently no network connection. Please check the network settings</string>
+    <string name="common_no_more_data">No more data</string>
+
+    <string name="common_web_ssl_error_title">The current website security certificate has expired or is not trusted\nDo you want to continue to access</string>
+    <string name="common_web_ssl_error_allow">continue</string>
+    <string name="common_web_ssl_error_reject">Back</string>
+
+    <string name="common_web_location_permission_title">The current website needs to get your geographic location</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">Refuse</string>
+
+    <string name="common_web_call_phone_title">Phone Number %s</string>
+    <string name="common_web_call_phone_allow">Call</string>
+    <string name="common_web_call_phone_reject">Cancel</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">Net Loading&#8230;</string>
+
+    <string name="http_unknown_error">Request error, unknown error</string>
+    <string name="http_token_error">Login failed, please login again</string>
+    <string name="http_data_explain_error">Data parsing exception, please wait</string>
+    <string name="http_server_out_time">The server request timed out. Please try again later</string>
+    <string name="http_network_error">The request failed. Please check the network settings</string>
+    <string name="http_response_error">The server responded abnormally. Please try again later</string>
+    <string name="http_server_error">The server connection is abnormal. Please try again later</string>
+    <string name="http_request_cancel">The request was interrupted, please try again</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Absolutely empty</string>
+    <string name="status_layout_error_request">Request error, please try again</string>
+    <string name="status_layout_error_network">Network error, please try again</string>
+    <string name="status_layout_retry">Retry</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">Please select a region</string>
+    <string name="address_hint">Please select</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Please select a date</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Please select a time</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">New </string>
+
+    <string name="update_content">Renew the content</string>
+
+    <string name="update_no">Another time</string>
+    <string name="update_yes">Update now</string>
+
+    <string name="update_permission_hint">Permission must be granted before the update can be downloaded normally</string>
+
+    <string name="update_status_start">Downloading</string>
+    <string name="update_status_running">Download %d%%</string>
+    <string name="update_status_successful">Download completed, click Install </string>
+    <string name="update_status_failed">Download failed. Click Retry</string>
+
+    <string name="update_no_update">It is already been the latest version</string>
+
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">Upgrade notification</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">Share &#8230;</string>
+
+    <string name="share_platform_wechat">Wechat</string>
+    <string name="share_platform_moment">Moments</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">Qzone</string>
+    <string name="share_platform_link">Copylink</string>
+
+    <string name="share_platform_copy_hint">Copied to clipboard</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Please enter the payment password</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">At least select  %d item</string>
+    <string name="select_max_hint">Can only select up to %d item</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Identity verification</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Press again to exit</string>
+    <string name="home_nav_index">Home</string>
+    <string name="home_nav_found">Share</string>
+    <string name="home_nav_message">Service</string>
+    <string name="home_nav_me">My</string>
+
+    <!-- 登录 -->
+    <string name="login_register">Register</string>
+    <string name="login_forget">Forget Password？</string>
+    <string name="login_text">Login</string>
+
+    <string name="login_other">Login in different ways</string>
+
+    <!-- 注册 -->
+    <string name="register_title">Register</string>
+    <string name="register_hint">Mobile phone number is only used to log in and protect account security </string>
+    <string name="register_password_hint1">Password Length over 6 </string>
+    <string name="register_password_hint2">Enter the password again</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">Settings</string>
+
+
+    <string name="setting_language_simple">Chinese</string>
+    <string name="setting_language_en">English</string>
+
+
+    <string name="setting_password">Change password</string>
+    <string name="setting_phone">Modify mobile phone</string>
+
+    <string name="setting_auto">Auto-login</string>
+    <string name="setting_cache">Clear cache</string>
+
+    <string name="setting_agreement">Privacy Policy</string>
+    <string name="setting_about">About us</string>
+
+    <string name="setting_exit">Logout</string>
+
+    <!-- 关于 -->
+    <string name="about_title">About us</string>
+    <string name="about_author">NIKOTA Global Software</string>
+    <string name="about_authorin">NIKOTA Software</string>
+    <string name="about_version">Version:</string>
+    <string name="versionid">2</string>
+    <string name="versionmini">6</string>
+    <string name="about_copyright">Copyright © 2021 &#8211; 2023</string>
+    <string name="setting_language_switchover">Language</string>
+    <string name="language">Language</string>
+    <string name="help">Help Center</string>
+    <string name="checkrefresh">Check for update</string>
+    <string name="setting_update">Check for update</string>
+    <string name="aboutus">About us</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">Forget Password</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Set up a password</string>
+    <string name="password_reset_phone_hint1">Set the password of 6&#8211;18 numbers</string>
+    <string name="password_reset_phone_hint2">Re-enter the password</string>
+    <string name="password_reset_input_error">The two passwords are inconsistent. Please re-enter</string>
+    <string name="password_reset_success">Modified successfully</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Set phone number</string>
+    <string name="phone_reset_change_hint">Please log in with your new mobile phone number next time</string>
+    <string name="phone_reset_commit">Immediately binding</string>
+
+    <string name="phone_reset_commit_succeed">Binding succeeded</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Personal Details</string>
+    <string name="personal_data_head">Profile photo</string>
+
+    <string name="personal_data_id">Usr ID</string>
+    <string name="personal_data_name">Nickname</string>
+    <string name="personal_data_name_hint">Nickname setting</string>
+
+    <string name="personal_data_address">Region</string>
+    <string name="personal_data_address_hint">Please select</string>
+
+    <string name="personal_data_phone">Mobile</string>
+    <string name="personal_data_phone_hint">Immediately binding</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Loading page&#8230;</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Choose picture</string>
+    <string name="image_select_all">All photos</string>
+
+    <string name="image_select_total">A total of  %d</string>
+
+    <string name="image_select_max_hint">Only %d pictures can be selected at most this time</string>
+
+    <string name="image_select_error">Unable to select, the picture has been deleted</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Cropping failed. The current phone does not support cropping pictures</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Video choice</string>
+    <string name="video_select_all">All video</string>
+
+    <string name="video_select_total">A total of %d </string>
+
+    <string name="video_select_max_hint">Only %d video can be selected at most this time</string>
+
+    <string name="video_select_error">Unable to select, the video has been deleted</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">The camera cannot be opened</string>
+    <string name="camera_image_error">Target Location Error</string>
+    <string name="device">Device</string>
+    <string name="adddevice">Add</string>
+    <string name="service">Attention</string>
+    <string name="tv_scan">Scan</string>
+
+    <string name="scanner_subtitle_not_bonded">New device</string>
+    <string name="scanner_subtitle_bonded">Bonded devices</string>
+
+    <string name="scanner_empty">No device found, please check whether the device is enabled</string>
+    <string name="scan_tip_isscanning">Scanning for devices</string>
+    <string name="scan_tip_stopscan">I have stopped scanning</string>
+    <string name="scan_time_timeout">The scanning is completed</string>
+    <string name="connect">Connect</string>
+    <string name="setdevname">Please set the device alias </string>
+    <string name="setdevname_tip">Please enter</string>
+    <string name="guest">Guest</string>
+    <string name="setting_nickname">Modify nickname</string>
+    <string name="close_count">Close account</string>
+    <string name="close_count_tip">How to close the account? Your data will be permanently deleted and cannot be retrieved. Are you sure you want to close the account？</string>
+    <string name="isconnected">Connected</string>
+    <string name="isconnecting">Connecting</string>
+    <string name="outconnected">Disconnected</string>
+    <string name="dev_status_implus">Charging</string>
+    <string name="input">Input</string>
+    <string name="output">Output</string>
+    <string name="ac">AC</string>
+    <string name="dc12">DC12V/10A </string>
+    <string name="usb_a">USB</string>
+    <string name="usb_fast">QC3.0</string>
+    <string name="usb_c">USB-C</string>
+    <string name="set_devnickname">Modify device name</string>
+    <string name="set_charge_discharge">Upper and lower limits of charging and discharging</string>
+    <string name="set_ac_inplus">Ac charging power</string>
+    <string name="set_car_inplus">On-board charging current</string>
+    <string name="set_keypad">Button Sound</string>
+    <string name="set_hydpoweron">Oil powered charging package</string>
+    <string name="set_standby_time">Device standby time</string>
+    <string name="set_breath_time">Screen rest time</string>
+    <string name="set_acstandby_time">AC standby time</string>
+    <string name="set_software">Firmware</string>
+    <string name="dev_type">Specification of equipment </string>
+    <string name="dev_disband">Unbind</string>
+    <string name="user_contracts">Read and agree</string>
+    <string name="login_check_tip">Please read the terms of the user agreement and privacy policy carefully and check</string>
+
+    <string name="userAndPrivacyAgreement">User and Privacy Agreement </string>
+    <string name="userAndPrivacyAgreementDetail">Use App to express consent《%1$s》与《%2$s》,please go to click to view the agreement details。</string>-->
+    <string name="userAndPrivacyAgreementPrefix">Use App to express consent</string>
+    <string name="userAndPrivacyAgreementSuffix">please go to click to view the agreement details。</string>
+    <string name="userAgreement"><u><font color="#85b84f" > User Agreement</font></u>、</string>
+    <string name="userAgreementtwo"><u><font color="#85b84f" > User &amp;</font></u></string>
+    <string name="privacyAgreement"><u><font color="#85b84f">Privacy Agreement</font></u></string>
+    <string name="detail">details</string>
+    <string name="agree">Agree</string>
+    <string name="refuse">Refuse</string>
+    <string name="userrefuse">you refuse...</string>
+    <string name="success">Modified successfully</string>
+    <string name="close_count_success">Log off successfully</string>
+    <string name="setting_nickname_tip">Please enter </string>
+    <string name="countryno_hip">Please enter ITFS</string>
+    <string name="phone_hint">phone number</string>
+    <string name="oldpassword_hip">the old password</string>
+    <string name="newpassword_hip">new password</string>
+    <string name="surepassword_hint">new password again</string>
+    <string name="login_tip">Please login</string>
+    <string name="password_complexa">Strong password strength</string>
+    <string name="password_complexb">Moderate password strength</string>
+    <string name="password_complexc">Strong password strength</string>
+
+    <string name="log_impluse100">I charge 100%, please rest assured</string>
+    <string name="log_implusen">I have charged %1$d%%，please keep charging</string>
+    <string name="log_connect">I have been connected. Thank you for paying attention to me, using me and taking care of me</string>
+    <string name="log_disconnect">I have been disconnected. Please check the network, or Bluetooth, or take a nap</string>
+    <string name="log_alert">I am low on power. Please turn off the diners first, and go home and let me replenish some energy. Thank you！</string>
+
+    <string name="create_group">Create a family</string>
+    <string name="myfamliy">My family</string>
+    <string name="add_group">Add new member</string>
+    <string name="group_user">Family members</string>
+    <string name="setting_groupname">Set family name</string>
+    <string name="set_groupname_tip">Maximum length 20</string>
+    <string name="set_content_tip">You have not entered yet</string>
+    <string name="my_qrcode">My QR code</string>
+    <string name="qrcode_indate">QR code is valid for five minutes</string>
+    <string name="qrcode_use_tip">Use nikota app to scan QR code, add me as a member, and share my device</string>
+    <string name="setting_newgroupname">Create a family</string>
+    <string name="scan_add_group_user">Scan QR code to add members</string>
+    <string name="scan_add_group_user_tip">Scan his QR code</string>
+    <string name="scan_qrcode_tip">Scan QR code</string>
+    <string name="scan_qrcode_find_tip"><![CDATA[goto\"My\">\"My QR code\"Get QR code]]></string>
+    <string name="light_lamp">Touch to illuminate</string>
+    <string name="light_nolamp">Tap to turn off the light</string>
+    <string name="scan_error_invid">QR code has expired</string>
+    <string name="scan_suc_user">Users scanned</string>
+    <string name="add_group_unselect">Unselected</string>
+    <string name="add_group_select">Selected</string>
+    <string name="disconnect_tip">Returning to the home page, disconnecting the scan task... </string>
+    <string name="account">account：</string>
+    <string name="select_dev">Select device</string>
+    <string name="norecord">no record</string>
+    <string name="bysys">system</string>
+    <string name="register_return">Return</string>
+    <string name="user_info_error">Failed to get user information</string>
+    <string name="ac_one">AC input</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrate_start">Start Upgrade</string>
+    <string name="update_ready">Ready</string>
+    <string name="binfile_error">.bin file error</string>
+    <string name="dev_poweron">Starting up</string>
+    <string name="dev_lightscreen">Bright screen</string>
+    <string name="dev_light">Lighting</string>
+    <string name="ac_one_input">AC Input</string>
+    <string name="acout">ACOUT</string>
+    <string name="dc">DC</string>
+    <string name="usb">USB</string>
+    <string name="acin">ACIN</string>
+    <string name="rechargingtime">Recharging time</string>
+    <string name="chargingtime">Charging time</string>
+    <string name="wifi">WIFI</string>
+    <string name="fourg">4G</string>
+    <string name="fiveg">5G</string>
+    <string name="watts">Watts</string>
+    <string name="dev_currentversion">Current Version</string>
+    <string name="controlboardlist">Dashboard List</string>
+    <string name="llc">LLC</string>
+    <string name="pfc">PFC</string>
+    <string name="select_controlboard">Select the dashboard to upgrade</string>
+    <string name="dev_selectupgradeversion">Select the version to upgrade</string>
+    <string name="mins">Mins</string>
+    <string name="ac_output">AC oupt</string>
+    <string name="dev_type_spec">Device model</string>
+    <string name="dev_macaddress">MAC Addr</string>
+    <string name="dev_id">SN</string>
+    <string name="dev_batterycells">Cell Type</string>
+    <string name="dev_voltagelevel">Voltage level</string>
+    <string name="dev_dcversion">DC Version</string>
+    <string name="dev_llcversion">LLC Version</string>
+    <string name="dev_pfcversion">PFC Version</string>
+    <string name="dev_inbound">Warehousing</string>
+    <string name="set_dev_type_">Set device model</string>
+    <string name="set_dev_type">Device model</string>
+    <string name="set_profile_id">Device version</string>
+    <string name="dev_onecorecode">Equipment 1 core coding</string>
+    <string name="dev_twocorecode">Equipment 2 core coding</string>
+    <string name="dev_dcsubversion">DC SubVersion</string>
+    <string name="dev_llcsubversion">LLC SubVersion</string>
+    <string name="dev_pfcsubversion">PFC SubVersion</string>
+    <string name="dev_frequency">Frequency</string>
+    <string name="dev_bmsversion">BMS Version</string>
+    <string name="dev_status_plus">Outputing</string>
+    <string name="common_str_length_error">Too much enter</string>
+    <string name="delete_alert">Alert</string>
+    <string name="delete_alert_info">Are you sure you want to unbind the device?</string>
+    <string name="inboundsuccess">Warehousing succeeded</string>
+    <string name="setting_language_success">Successfully set the language, which will take effect after all applications are restarted</string>
+    <string name="dev_add">Add</string>
+    <string name="dev_moodscreen">Atmos</string>
+    <string name="dev_status_sum_implus">Solar charging</string>
+    <string name="dev_standby">Standby</string>
+    <string name="hours">Hour</string>
+    <string name="update_success">The upgrade is complete</string>
+    <string name="dev_dccode">DC code</string>
+    <string name="dev_pfccode">PFC code</string>
+    <string name="dev_llccode">LLC code</string>
+    <string name="dev_lastupgradetime">update time：</string>
+    <string name="upgrate_alter_tip">Once an upgrade operation is performed, it cannot be interrupted midway. Interruption may cause the loss of device system software and even result in the device not working properly！</string>
+    <string name="upgrade_error">The connection to the device was interrupted abnormally, and this upgrade failed</string>
+    <string name="upgrate_alter">Are you sure you want to perform the device upgrade operation?</string>
+    <string name="update_finish">Upgrade ended</string>
+    <string name="group_del">Delete User Group</string>
+    <string name="group_del_tip">Are you sure you want to delete the user group you created?</string>
+    <string name="admin_user_group_del_error">Group administrator user</string>
+    <string name="group_user_del">Delete Group Members </string>
+    <string name="group_user_del_tip">Are you sure you want to delete the group member?</string>
+    <string name="group_user_del_me">Quit group</string>
+    <string name="group_user_del_me_tip">Are you sure you want to quit the group?</string>
+    <string name="input_fast">Fast Input</string>
+    <string name="dev_set_implus">Set the battery ratio to stop charging</string>
+    <string name="dev_set_implus_val">Battery charging limit</string>
+    <string name="dev_set_discharging_val">Battery discharging limit</string>
+    <string name="dev_set_discharging">Set the battery ratio to stop discharging</string>
+    <string name="dev_set_fastin">Slow charge</string>
+    <string name="ac_yboost">YBOOST</string>
+    <string name="open_yboost_title">Are you sure you want to open YBOOST? </string>
+    <string name="open_yboost_tip">The YBOOST function supports most electrical appliances, but please note the following during use: \n1. Please only connect one device to avoid voltage changes affecting the normal use of other appliances when multiple appliances are in use; \n2. YBOOST is more suitable for appliances such as blowers, kitchen appliances, and tools; \n3. Electrical appliances with strict voltage requirements should be fully tested before use; \n4.Do not connect to the home power grid under YBOOST status, otherwise low-voltage protection will be triggered and trip.</string>
+    <string name="ac_yboost_effect">boost effect</string>
+    <string name="binfile_error_md5">file check failure</string>
+    <string name="password_reset_inputnewpwd_error">Your old and new password are the same</string>
+    <string name="save_title">save</string>
+    <string name="set_error_tip">Setting failed</string>
+    <string name="bind_dev_success_tip">Successfully bound the device. </string>
+    <string name="unbind_dev_success">Device unbinding succeeded. </string>
+    <string name="scan_success">Scan code successfully</string>
+    <string name="unbind_dev_id_error">Unbind  error</string>
+    <string name="unbind_dev_fail">Unbind failed</string>
+    <string name="appleid_user">One Apple Vermicelli</string>
+    <string name="ble_deinied_info">Permanently denied authorization, please manually grant Bluetooth permission</string>
+    <string name="ble_deinied_error">Failed to obtain Bluetooth permissions</string>
+    <string name="bind_dev_error_tip">Device mac address was binded</string>
+    <string name="bind_dev_macerror_tip">Device mac address error</string>
+    <string name="update_no_update_googleplay">Please update the app with Google Play</string>
+    <string name="testdevice">test</string>
+    <string name="adddevicelong">Add new device</string>
+    <string name="ledscreen">LED Screen</string>
+    <string name="chargingfinish_ctitle">Charging notification</string>
+    <string name="chargingfinish_ctext">The device is fully charged</string>
+    <string name="chargingfinish_subt">Charging up to</string>
+
+    <string name="setting_language_ukr" >Ukrainian</string>
+    <string name="charginglow_ctitle" >Low battery</string>
+    <string name="charginglow_ctext" >The battery level is below 20%, please charge it in a timely manner</string>
+</resources>

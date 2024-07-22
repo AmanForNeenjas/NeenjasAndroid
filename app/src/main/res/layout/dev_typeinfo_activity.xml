@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SettingActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparent"
+        app:leftIconTint="@color/common_icon_color"
+        app:titleColor="@color/titlebar_font_color_dark"
+        app:lineVisible="false"
+        app:title="@string/dev_type" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hjq.widget.layout.RoundTopSettingBar
+                android:id="@+id/sb_type_spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_type_spec"
+                tools:bar_rightText="META2000"/>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_macaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/dev_macaddress"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                tools:bar_rightText="DC:0D:30:60:FC:3B" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_leftText="@string/dev_id"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                tools:bar_rightText="00000000000000" />
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_batterycells"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_batterycells"
+                />
+
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_voltagelevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_voltagelevel"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dccode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_dccode"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_pfccode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_pfccode"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_llccode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_llccode"
+                />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_dcversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_dcversion"
+                />
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_llcversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/table_cell_color"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_llcversion"
+               
+                />
+
+            <com.hjq.widget.layout.RoundBottomSettingBar
+                android:id="@+id/sb_pfcversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                app:bar_lineVisible = "false"
+                app:bar_leftTextColor="@color/table_cell_font_dark"
+                app:bar_rightTextColor="@color/table_cell_font_light"
+                app:bar_lineDrawable ="@color/table_cell_line_dark"
+                app:bar_leftText="@string/dev_pfcversion"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

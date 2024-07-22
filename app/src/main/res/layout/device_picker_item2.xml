@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_20">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_find_corner"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_marginStart="@dimen/dp_40"
+        app:srcCompat="@drawable/device"
+        tools:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_20"
+        >
+        <TextView
+            android:id="@+id/tv_connectdevname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_lg_size"
+            android:textColor="@color/font_color_dark"/>
+        <TextView
+            android:id="@+id/tv_dtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_sm_size"
+            android:textColor="@color/font_color_light"/>
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/pb_impluse"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="47dp"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_impluse"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="141dp"
+
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_color_base"
+                android:textSize="@dimen/font_base_size" />
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

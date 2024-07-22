@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.widget.layout.SettingBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sb_groupuser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/table_cell_color"
+    app:bar_leftTextColor="@color/table_cell_font_dark"
+    app:bar_rightTextColor="@color/table_cell_font_light"
+    app:bar_rightDrawable="@drawable/arrows_right_ic"
+    tools:bar_rightText="181****1413"
+    tools:bar_leftText="@string/setting_phone"
+    app:bar_lineVisible = "false"
+    />
