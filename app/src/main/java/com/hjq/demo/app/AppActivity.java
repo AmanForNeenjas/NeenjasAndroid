@@ -41,7 +41,7 @@ public abstract class AppActivity extends BaseActivity
     private BaseDialog mDialog;
     /** 对话框数量 */
     private int mDialogCount;
-
+Softwares
     /**
      * 当前加载对话框是否在显示中
      */
